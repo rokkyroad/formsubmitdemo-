@@ -38,6 +38,12 @@
         <div class="container1 shadow-white">
             <h2 class="text-white">Contact Us</h2>
             <form class="contact-form" action="https://formsubmit.co/3f287b5b9a94336e142f78c74d07f0ce" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- captcha disabled-->
+                <input type="hidden" name="_captcha" value="false">
+
                 <input type="text" id="name" name="name" placeholder="Your name" required>
                 <input type="email" id="email" name="email" placeholder="Your email" required>
                 <textarea id="message" name="message" placeholder="What can we help you with?" required></textarea>
